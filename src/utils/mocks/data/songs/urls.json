@@ -1,0 +1,297 @@
+{
+  "537616": {
+    "data": [
+      {
+        "id": 537616,
+        "url": "/mocks/songs/audio/87694985a2244fa113f93f4a01326491.mp3",
+        "br": 128000,
+        "size": 4204817,
+        "md5": "87694985a2244fa113f93f4a01326491",
+        "code": 200,
+        "expi": 1200,
+        "type": "mp3",
+        "gain": -3.4966,
+        "peak": 0.9731,
+        "fee": 0,
+        "uf": null,
+        "payed": 0,
+        "flag": 262400,
+        "canExtend": false,
+        "freeTrialInfo": null,
+        "level": "standard",
+        "encodeType": "mp3",
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null
+        },
+        "freeTimeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "type": 0,
+          "remainTime": 0
+        },
+        "urlSource": 0,
+        "rightSource": 0,
+        "podcastCtrp": null,
+        "effectTypes": null,
+        "time": 262000
+      }
+    ],
+    "code": 200
+  },
+  "20110049": {
+    "data": [
+      {
+        "id": 20110049,
+        "url": "/mocks/songs/audio/7b00f836855255459e36b057c4876be2.mp3",
+        "br": 128000,
+        "size": 3171100,
+        "md5": "7b00f836855255459e36b057c4876be2",
+        "code": 200,
+        "expi": 1200,
+        "type": "mp3",
+        "gain": -1.1936,
+        "peak": 0.9307,
+        "fee": 8,
+        "uf": null,
+        "payed": 0,
+        "flag": 260,
+        "canExtend": false,
+        "freeTrialInfo": null,
+        "level": "standard",
+        "encodeType": "mp3",
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null
+        },
+        "freeTimeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "type": 0,
+          "remainTime": 0
+        },
+        "urlSource": 0,
+        "rightSource": 0,
+        "podcastCtrp": null,
+        "effectTypes": null,
+        "time": 198164
+      }
+    ],
+    "code": 200
+  },
+
+  "5267808": {
+    "data": [
+      {
+        "id": 5267808,
+        "url": "/mocks/songs/audio/23a3bc6d00517c08ac57e4ac4fee8d33.mp3",
+        "br": 128000,
+        "size": 4124511,
+        "md5": "23a3bc6d00517c08ac57e4ac4fee8d33",
+        "code": 200,
+        "expi": 1200,
+        "type": "mp3",
+        "gain": -1.2182,
+        "peak": 0.9328,
+        "fee": 0,
+        "uf": null,
+        "payed": 0,
+        "flag": 262144,
+        "canExtend": false,
+        "freeTrialInfo": null,
+        "level": "standard",
+        "encodeType": "mp3",
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null
+        },
+        "freeTimeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "type": 0,
+          "remainTime": 0
+        },
+        "urlSource": 0,
+        "rightSource": 0,
+        "podcastCtrp": null,
+        "effectTypes": null,
+        "time": 257000
+      }
+    ],
+    "code": 200
+  },
+  "29539350": {
+    "data": [
+      {
+        "id": 29539350,
+        "url": "/mocks/songs/audio/f525fdef8ac9c509eb4a4b0b46fe3f71.mp3",
+        "br": 128000,
+        "size": 4578952,
+        "md5": "f525fdef8ac9c509eb4a4b0b46fe3f71",
+        "code": 200,
+        "expi": 1200,
+        "type": "mp3",
+        "gain": -3.1208,
+        "peak": 0.9627,
+        "fee": 0,
+        "uf": null,
+        "payed": 0,
+        "flag": 262144,
+        "canExtend": false,
+        "freeTrialInfo": null,
+        "level": "standard",
+        "encodeType": "mp3",
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null
+        },
+        "freeTimeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "type": 0,
+          "remainTime": 0
+        },
+        "urlSource": 0,
+        "rightSource": 0,
+        "podcastCtrp": null,
+        "effectTypes": null,
+        "time": 286000
+      }
+    ],
+    "code": 200
+  },
+  "1811909303": {
+    "data": [
+      {
+        "id": 1811909303,
+        "url": "/mocks/songs/audio/88134cdc47a2d348df5eca3a40def6b3.mp3",
+        "br": 128000,
+        "size": 5103405,
+        "md5": "88134cdc47a2d348df5eca3a40def6b3",
+        "code": 200,
+        "expi": 1200,
+        "type": "mp3",
+        "gain": -5.4678,
+        "peak": 0.9492,
+        "fee": 8,
+        "uf": null,
+        "payed": 0,
+        "flag": 458756,
+        "canExtend": false,
+        "freeTrialInfo": null,
+        "level": "standard",
+        "encodeType": "mp3",
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null
+        },
+        "freeTimeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "type": 0,
+          "remainTime": 0
+        },
+        "urlSource": 0,
+        "rightSource": 0,
+        "podcastCtrp": null,
+        "effectTypes": null,
+        "time": 318904
+      }
+    ],
+    "code": 200
+  },
+  "1895330088": {
+    "data": [
+      {
+        "id": 1895330088,
+        "url": "/mocks/songs/audio/c69335efd8762f54b410a513dafe2d66.mp3",
+        "br": 128000,
+        "size": 3702657,
+        "md5": "c69335efd8762f54b410a513dafe2d66",
+        "code": 200,
+        "expi": 1200,
+        "type": "mp3",
+        "gain": -8.724,
+        "peak": 1,
+        "fee": 8,
+        "uf": null,
+        "payed": 0,
+        "flag": 479236,
+        "canExtend": false,
+        "freeTrialInfo": null,
+        "level": "standard",
+        "encodeType": "mp3",
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null
+        },
+        "freeTimeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "type": 0,
+          "remainTime": 0
+        },
+        "urlSource": 0,
+        "rightSource": 0,
+        "podcastCtrp": null,
+        "effectTypes": null,
+        "time": 231349
+      }
+    ],
+    "code": 200
+  },
+  "2049701123": {
+    "data": [
+      {
+        "id": 2049701123,
+        "url": "/mocks/songs/audio/7dee08601964edf4950cb078e5116079.mp3",
+        "br": 128000,
+        "size": 2925741,
+        "md5": "7dee08601964edf4950cb078e5116079",
+        "code": 200,
+        "expi": 1200,
+        "type": "mp3",
+        "gain": -7.3307,
+        "peak": 0.7478,
+        "fee": 8,
+        "uf": null,
+        "payed": 0,
+        "flag": 200710,
+        "canExtend": false,
+        "freeTrialInfo": null,
+        "level": "standard",
+        "encodeType": "mp3",
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null
+        },
+        "freeTimeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "type": 0,
+          "remainTime": 0
+        },
+        "urlSource": 0,
+        "rightSource": 0,
+        "podcastCtrp": null,
+        "effectTypes": null,
+        "time": 182800
+      }
+    ],
+    "code": 200
+  }
+}

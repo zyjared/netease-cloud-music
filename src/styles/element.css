@@ -1,0 +1,8 @@
+#app {
+  --el-color-primary: var(--self);
+  --el-text-color-primary: var(--text);
+}
+
+/* .el-popper {
+  z-index: 99999 !importrant;
+} */

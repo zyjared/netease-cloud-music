@@ -1,0 +1,1005 @@
+{
+  "537616": {
+    "songs": [
+      {
+        "name": "拓郎とアズ",
+        "id": 537616,
+        "pst": 0,
+        "t": 0,
+        "ar": [{ "id": 15803, "name": "渡辺俊幸", "tns": [], "alias": [] }],
+        "alia": [],
+        "pop": 90,
+        "st": 0,
+        "rt": "",
+        "fee": 0,
+        "v": 14,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 50480,
+          "name": "優しい時間 オリジナル・サウンドトラック",
+          "picUrl": "/mocks/songs/images/644313813889024.jpg",
+          "tns": [],
+          "pic": 644313813889024
+        },
+        "dt": 262000,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 10511821,
+          "vd": 630,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 6307152,
+          "vd": 630,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 4204817,
+          "vd": 630,
+          "sr": 44100
+        },
+        "sq": null,
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 5,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 9007199254872064,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 14,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "awardTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 663018,
+        "mv": 0,
+        "publishTime": 1107878400000,
+        "tns": ["拓郎与阿兹"]
+      }
+    ],
+    "privileges": [
+      {
+        "id": 537616,
+        "fee": 0,
+        "payed": 0,
+        "st": 0,
+        "pl": 320000,
+        "dl": 320000,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 256,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "exhigh",
+        "dlLevel": "exhigh",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    ],
+    "code": 200
+  },
+  "20110049": {
+    "songs": [
+      {
+        "name": "River Flows In You",
+        "id": 20110049,
+        "pst": 0,
+        "t": 0,
+        "ar": [{ "id": 40281, "name": "Martin Ermen", "tns": [], "alias": [] }],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 8,
+        "v": 159,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 1862616,
+          "name": "Kuschelklassik Piano Dreams, Vol. 2",
+          "picUrl": "https://p2.music.126.net/QnFSKGqltSSQ1PAO3z44dg==/5680077069158217.jpg",
+          "tns": [],
+          "pic": 5680077069158217
+        },
+        "dt": 198164,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 7927685,
+          "vd": 23637,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4756628,
+          "vd": 26257,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3171100,
+          "vd": 28063,
+          "sr": 44100
+        },
+        "sq": null,
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 10,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 139264,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 159,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "awardTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rurl": null,
+        "rtype": 0,
+        "mst": 9,
+        "cp": 7001,
+        "mv": 0,
+        "publishTime": 1257436800007,
+        "tns": ["你的心河"]
+      }
+    ],
+    "privileges": [
+      {
+        "id": 20110049,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    ],
+    "code": 200
+  },
+  "5267808": {
+    "songs": [
+      {
+        "name": "Always With Me",
+        "id": 5267808,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          { "id": 16874, "name": "木村弓", "tns": [], "alias": [] },
+          { "id": 231900, "name": "奥户巴寿", "tns": [], "alias": [] }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 0,
+        "v": 758,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 512812,
+          "name": "幸福的味道",
+          "picUrl": "/mocks/songs/images/109951165164767650.jpg",
+          "tns": [],
+          "pic_str": "109951165164767650",
+          "pic": 109951165164767650
+        },
+        "dt": 257000,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 10311143,
+          "vd": 23368,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 6186721,
+          "vd": 26013,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 4124511,
+          "vd": 27817,
+          "sr": 44100
+        },
+        "sq": null,
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 131072,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 758,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "awardTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 5003,
+        "mv": 0,
+        "publishTime": 1070208000000
+      }
+    ],
+    "privileges": [
+      {
+        "id": 5267808,
+        "fee": 0,
+        "payed": 0,
+        "st": 0,
+        "pl": 320000,
+        "dl": 320000,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 0,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "exhigh",
+        "dlLevel": "exhigh",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    ],
+    "code": 200
+  },
+  "29539350": {
+    "songs": [
+      {
+        "name": "风居住的街道",
+        "id": 29539350,
+        "pst": 0,
+        "t": 0,
+        "ar": [{ "id": 16658, "name": "磯村由紀子", "tns": [], "alias": [] }],
+        "alia": [],
+        "pop": 95,
+        "st": 0,
+        "rt": null,
+        "fee": 0,
+        "v": 677,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 3034224,
+          "name": "西尔德斯 新世纪·亚洲",
+          "picUrl": "/mocks/songs/images/2528876745028570.jpg",
+          "tns": [],
+          "pic": 2528876745028570
+        },
+        "dt": 286000,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 11447067,
+          "vd": 4366,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 6868324,
+          "vd": 7009,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 4578952,
+          "vd": 8791,
+          "sr": 44100
+        },
+        "sq": null,
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 9,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 131072,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 677,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "awardTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "cp": 0,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "mv": 0,
+        "publishTime": 1198944000000
+      }
+    ],
+    "privileges": [
+      {
+        "id": 29539350,
+        "fee": 0,
+        "payed": 0,
+        "st": 0,
+        "pl": 320000,
+        "dl": 320000,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 320000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 0,
+        "preSell": false,
+        "playMaxbr": 320000,
+        "downloadMaxbr": 320000,
+        "maxBrLevel": "exhigh",
+        "playMaxBrLevel": "exhigh",
+        "downloadMaxBrLevel": "exhigh",
+        "plLevel": "exhigh",
+        "dlLevel": "exhigh",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    ],
+    "code": 200
+  },
+  "1811909303": {
+    "songs": [
+      {
+        "name": "Track in Time (Piano Version)",
+        "id": 1811909303,
+        "pst": 0,
+        "t": 0,
+        "ar": [{ "id": 32385, "name": "Dennis Kuo", "tns": [], "alias": [] }],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 8,
+        "v": 16,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 121627847,
+          "name": "Track in Time (Piano Version)",
+          "picUrl": "/mocks/songs/images/109951165628105528.jpg",
+          "tns": [],
+          "pic_str": "109951165628105528",
+          "pic": 109951165628105540
+        },
+        "dt": 318904,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 12758445,
+          "vd": -19133,
+          "sr": 48000
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 7655085,
+          "vd": -16488,
+          "sr": 48000
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 5103405,
+          "vd": -14678,
+          "sr": 48000
+        },
+        "sq": {
+          "br": 1200374,
+          "fid": 0,
+          "size": 47850550,
+          "vd": -19133,
+          "sr": 48000
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 139264,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 16,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "awardTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 1416692,
+        "mv": 0,
+        "publishTime": 1611244800000
+      }
+    ],
+    "privileges": [
+      {
+        "id": 1811909303,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    ],
+    "code": 200
+  },
+  "1895330088": {
+    "songs": [
+      {
+        "name": "予你",
+        "id": 1895330088,
+        "pst": 0,
+        "t": 0,
+        "ar": [{ "id": 1143033, "name": "队长", "tns": [], "alias": [] }],
+        "alia": ["巫哲小说《解药》官方主题曲Ⅱ"],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 8,
+        "v": 23,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 136184367,
+          "name": "予你",
+          "picUrl": "/mocks/songs/images/109951166625738075.jpg",
+          "tns": [],
+          "pic_str": "109951166625738075",
+          "pic": 109951166625738080
+        },
+        "dt": 231349,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9256449,
+          "vd": -51540,
+          "sr": 48000
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5553921,
+          "vd": -48941,
+          "sr": 48000
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3702657,
+          "vd": -47240,
+          "sr": 48000
+        },
+        "sq": {
+          "br": 912649,
+          "fid": 0,
+          "size": 26392672,
+          "vd": -51530,
+          "sr": 48000
+        },
+        "hr": {
+          "br": 1677015,
+          "fid": 0,
+          "size": 48497164,
+          "vd": -51534,
+          "sr": 48000
+        },
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 536879104,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 23,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "awardTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 0,
+        "mv": 0,
+        "publishTime": 0
+      }
+    ],
+    "privileges": [
+      {
+        "id": 1895330088,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 4,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "hires",
+        "playMaxBrLevel": "hires",
+        "downloadMaxBrLevel": "hires",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 1999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    ],
+    "code": 200
+  },
+  "2049701123": {
+    "songs": [
+      {
+        "name": "我当然希望你好",
+        "id": 2049701123,
+        "pst": 0,
+        "t": 0,
+        "ar": [{ "id": 14118805, "name": "Pulse.", "tns": [], "alias": [] }],
+        "alia": [],
+        "pop": 95,
+        "st": 0,
+        "rt": "",
+        "fee": 8,
+        "v": 6,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 166150346,
+          "name": "我当然希望你好",
+          "picUrl": "/mocks/songs/images/109951168632344462.jpg",
+          "tns": [],
+          "pic_str": "109951168632344462",
+          "pic": 109951168632344460
+        },
+        "dt": 182800,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 7314285,
+          "vd": -37510,
+          "sr": 48000
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4388589,
+          "vd": -34918,
+          "sr": 48000
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 2925741,
+          "vd": -33307,
+          "sr": 48000
+        },
+        "sq": {
+          "br": 956743,
+          "fid": 0,
+          "size": 21861600,
+          "vd": -37468,
+          "sr": 48000
+        },
+        "hr": {
+          "br": 1726676,
+          "fid": 0,
+          "size": 39454567,
+          "vd": -37505,
+          "sr": 48000
+        },
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 536879168,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 6,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "awardTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 0,
+        "mv": 0,
+        "publishTime": 0
+      }
+    ],
+    "privileges": [
+      {
+        "id": 2049701123,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 128000,
+        "toast": false,
+        "flag": 6,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "hires",
+        "playMaxBrLevel": "hires",
+        "downloadMaxBrLevel": "hires",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "standard",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null
+        },
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          },
+          {
+            "rate": 1999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    ],
+    "code": 200
+  }
+}

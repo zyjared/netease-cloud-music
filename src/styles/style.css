@@ -1,0 +1,68 @@
+@import "variable.css";
+@import "element.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500/50;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-white/0 dark:bg-black/0;
+  }
+
+  :root {
+    font-size: 14px;
+}
+
+body {
+    @apply cursor-default select-none;
+  }
+
+  h2 {
+    @apply text-[1.2rem];
+  }
+
+  progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+  }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 1px;
+  }
+
+  progress[value]::-webkit-progress-value {
+    background-color: red;
+    border-radius: 1px;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .icon {
+    @apply align-middle text-inherit;
+  }
+
+  .section-hidden {
+    @apply absolute -top-[-9999px] -left-[-9999px];
+  }
+
+  .glass-base {
+    @apply rounded-md bg-slate-600/50 p-3;
+  }
+}
