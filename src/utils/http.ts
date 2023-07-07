@@ -2,6 +2,7 @@ import axios from "axios";
 import { ElMessage } from "element-plus";
 
 import { mockAll } from "./mock";
+import { useLoadingStore } from "@/stores/loading";
 mockAll();
 
 export const httpInstance = axios.create({
@@ -11,12 +12,16 @@ export const httpInstance = axios.create({
 });
 
 httpInstance.interceptors.request.use((config) => {
+  const loadingStore = useLoadingStore();
+  loadingStore.updateLoading(config, true);
   return config;
 });
 
 // Add a response interceptor
 httpInstance.interceptors.response.use(
   function (response) {
+    const loadingStore = useLoadingStore();
+    loadingStore.updateLoading(response.config, false);
     return response.data;
   },
   function (error) {

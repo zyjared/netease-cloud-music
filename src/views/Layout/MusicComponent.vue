@@ -24,7 +24,7 @@ const isPlayingStore = useIsPlayingStore();
 
 <template>
     <div
-        class="border-t border-[--line] flex items-center content-start justify-around gap-4 sm:gap-8 py-1 px-3 sm:px-0 h-[--h-component]">
+        class="border-t border-[--line] flex items-center content-start justify-around gap-4 sm:gap-8 py-1 px-1 sm:px-0 h-[--h-component]">
         <!-- 封面 -->
 
         <div class="w-12 h-12 m-1 cursor-pointer sm:h-16 sm:w-16 sm:ml-6" :style="{
@@ -35,7 +35,7 @@ const isPlayingStore = useIsPlayingStore();
 
         <!-- 上一曲 播放 下一曲 -->
 
-        <div class="flex gap-4 text-red-500">
+        <div class="flex text-red-500 xs:gap-6 sm:gap-4">
             <IconBackward class="hidden w-6 cursor-pointer xs:inline-block" @click="isPlayingStore.previousSong()" />
             <IconPlay class="w-6 cursor-pointer" v-show="!isPlayingStore.isPlaying"
                 @click="isPlayingStore.handleIsPlaying()" />
@@ -46,7 +46,7 @@ const isPlayingStore = useIsPlayingStore();
 
         <!-- 进度条 -->
 
-        <div class="flex-1">
+        <div class="w-40 sm:flex-1 xs:w-48">
             <div class="flex justify-between -mb-2 text-sm" v-if="isPlayingStore.song">
 
                 <!-- 歌曲信息 -->

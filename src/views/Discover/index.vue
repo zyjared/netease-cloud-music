@@ -1,25 +1,10 @@
-<scrip lang="ts">
-
-</scrip>
 
 <script setup lang="ts">
 import FullContainer from '@/components/common/FullContainer.vue';
-import Banner from './components/Banner.vue';
-import { onMounted, onUnmounted, ref, shallowRef, watch } from 'vue';
-import { getBanners } from '@/api/discover'
+
+import { onMounted, onUnmounted, ref, watch } from 'vue';
+
 import { useRoute, useRouter } from 'vue-router';
-
-
-const banners = shallowRef<{
-    pic: string;
-    typeTitle: string;
-    url: string;
-    bannerId: string;
-}[] | null>(null)
-
-onMounted(async () => {
-    banners.value = await getBanners();
-})
 
 
 // 头部导航
@@ -82,12 +67,9 @@ watch(() => route.path, () => {
             </ul>
         </template>
         <template #default>
-            <!-- banner -->
-            <Banner :banners="banners" v-if="banners" />
 
-            <!-- 歌单推荐 -->
             <RouterView />
-
+            <Loading />
         </template>
     </FullContainer>
 </template>

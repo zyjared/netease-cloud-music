@@ -50,7 +50,7 @@ declare module 'vue' {
     LayoutContainer: typeof import('./src/components/global/LayoutContainer.vue')['default']
     LinkSub: typeof import('./src/components/global/LinkSub.vue')['default']
     ListContainer: typeof import('./src/components/common/ListContainer.vue')['default']
-    Loading: typeof import('./src/components/tips/Loading.vue')['default']
+    Loading: typeof import('./src/components/global/Loading.vue')['default']
     Message: typeof import('./src/components/icons/Message.vue')['default']
     MusicalNote: typeof import('./src/components/icons/MusicalNote.vue')['default']
     NeteaseCloudMusic: typeof import('./src/components/icons/NeteaseCloudMusic.vue')['default']

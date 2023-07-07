@@ -59,8 +59,18 @@ export const useIsPlayingStore = defineStore("isPlaying", () => {
     song,
     async (newSong) => {
       if (newSong && newSong.check.success) {
-        if (newSong.url == audio.src) return;
-        audio.src = newSong.url;
+        try {
+          if (newSong.url == audio.src) return;
+          audio.src = newSong.url;
+        } catch {
+          ElNotification({
+            title: "audio 实例已不存在",
+            message:
+              "请检查其他组件不要做卸载音乐实例操作；你可能会在开发环境看到该提示，请刷新浏览器；频繁提示请回来重写，私有该实例。",
+            zIndex: 999,
+          });
+          return;
+        }
         audio.load();
         if (isPlaying.value) {
           audio.play().catch(() => {
@@ -99,7 +109,15 @@ export const useIsPlayingStore = defineStore("isPlaying", () => {
   const speakerWave = ref(audio.volume); // 音量
   onMounted(() => {
     audio.addEventListener("timeupdate", () => {
-      playedtime.value = audio.currentTime;
+      try {
+        playedtime.value = audio.currentTime;
+      } catch {
+        ElNotification({
+          title: "audio 实例已不存在",
+          message: "快刷新！",
+          zIndex: 999,
+        });
+      }
     });
     audio.addEventListener("volumechange", () => {
       speakerWave.value = audio.volume;
@@ -175,7 +193,17 @@ export const useIsPlayingStore = defineStore("isPlaying", () => {
     if (!interceptorHasSong() || !interceptorSongCheck()) return;
     await nextTick();
     if ((value == undefined && !isPlaying.value) || value) {
-      if (audio.src === "") {
+      try {
+        if (audio.src === "") {
+          return;
+        }
+      } catch {
+        ElNotification({
+          title: "audio 实例已不存在",
+          message:
+            "请检查其他组件不要做卸载音乐实例操作；你可能会在开发环境看到该提示，请刷新浏览器；频繁提示请回来重写，私有该实例。",
+          zIndex: 999,
+        });
         return;
       }
       audio
@@ -221,24 +249,45 @@ export const useIsPlayingStore = defineStore("isPlaying", () => {
     if (!debounce()) return;
 
     let song: Song;
+    let preIndex: number;
 
-    const preIndex = songList.value.findIndex((song: Song) => song.id == id);
+    try {
+      preIndex = songList.value.findIndex((song: Song) => song.id == id);
+    } catch (error) {
+      ElNotification({
+        title: "提交的数据不正确",
+        message: `此提示后，请不要把异常信息加入本地歌单。如果有，请移除。如果本地歌单是自动加入了异常数据，请回来重修改逻辑。`,
+        zIndex: 999,
+      });
+      return;
+    }
+
     if (preIndex != -1) {
       song = songList.value.splice(preIndex, 1)[0];
     } else {
+      try {
+        const { name, fee, dt, ar, al } = (await getSongsDetailByIds([id]))[
+          "songs"
+        ][0];
+        //   console.log("detail", { name, fee, dt, ar, al });
+        // 音乐url
+        const url = (await getSongsUrlByIds([id]))[0].url;
+        //   console.log("url", url);
+        // 检查音乐是否可用
+        const check = await getSongStatus(id);
+        //   歌词
+        const lyric = await getSongLyric(id);
+        song = { id, name, fee, dt, ar, al, url, check, lyric };
+      } catch (error) {
+        ElNotification({
+          title: "加入/播放失败",
+          message:
+            "获取歌曲失败：请检查是否已配置或正确；如果是连接api报错，请测试是否已被官方屏蔽。",
+          zIndex: 999,
+        });
+        return;
+      }
       // 歌曲信息
-      const { name, fee, dt, ar, al } = (await getSongsDetailByIds([id]))[
-        "songs"
-      ][0];
-      //   console.log("detail", { name, fee, dt, ar, al });
-      // 音乐url
-      const url = (await getSongsUrlByIds([id]))[0].url;
-      //   console.log("url", url);
-      // 检查音乐是否可用
-      const check = await getSongStatus(id);
-      //   歌词
-      const lyric = await getSongLyric(id);
-      song = { id, name, fee, dt, ar, al, url, check, lyric };
     }
 
     if (songActiveIndex.value === -1) {

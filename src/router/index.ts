@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { useSubView } from "@/stores/subView";
+import { useLoadingStore } from "@/stores/loading";
 
 const routes = [
   {
@@ -25,13 +26,13 @@ const routes = [
           title: "歌单",
         },
       },
-      {
-        path: "ranking",
-        component: () => import("@/views/Discover/views/Ranking.vue"),
-        meta: {
-          title: "排行榜",
-        },
-      },
+      //   {
+      //     path: "ranking",
+      //     component: () => import("@/views/Discover/views/Ranking.vue"),
+      //     meta: {
+      //       title: "排行榜",
+      //     },
+      //   },
       {
         path: "newsongs",
         component: () => import("@/views/Discover/views/Newsongs.vue"),
@@ -70,6 +71,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+router.beforeEach(() => {
+  useLoadingStore().init();
 });
 
 router.afterEach(() => {

@@ -1,18 +1,32 @@
-# Vue 3 + TypeScript + Vite
+# 网易云音乐 - 前端
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[Vue3](https://cn.vuejs.org/)、[Pinia](https://pinia.web3doc.top/)、[Vue Router](https://router.vuejs.org/zh/) 等。
 
-## Recommended IDE Setup
+喜欢在平板上打开<a href="https://music.163.com/">
+网易云音乐
+<img src="public/netease-cloud-music.svg" style="display:inline-block; height: 1em;vertical-align:middle;" />
+</a>，半屏的子页面层叠使用很舒适。
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 关于 api
 
-## Type Support For `.vue` Imports in TS
+可以在 [NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi) 查看详情。
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+默认使用 [mock](http://mockjs.com/) 的数据。
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## 演示
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+```shell
+$ git clone https://github.com/yujiangz/netease-cloud-music.git
+$ cd netease-cloud-music
+$ npm install
+$ npm run dev
+```
+
+如果你选择不使用 mock 的数据，则需要阅读 [关于 api](#关于-api)。除此之外，你还需要在 `src/utils/mock.ts` 注释掉你不需要 mock 的部分。
+
+> 或者等我后面部署，部署后，该页将更新链接。
+
+## 联系
+
+- [我的主页](https://yustudy.cn)
+- Q: 528802378

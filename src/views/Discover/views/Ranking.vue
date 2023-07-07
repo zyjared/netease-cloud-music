@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    <div>推荐</div>
+    <div>排行榜</div>
 </template>

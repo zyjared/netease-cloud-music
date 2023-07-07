@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
     <main class="relative h-[--h-main] overflow-x-hidden">
         <div class="h-full overflow-y-auto">

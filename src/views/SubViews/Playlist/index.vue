@@ -114,9 +114,12 @@ const toComment = computed<ToComment | null>(() => {
                     <SubLink :to="toUser" v-if="toUser" class="w-[calc(100%-11rem)] space-y-4">
                         <div class="">{{ selfData?.name }}</div>
                         <div class="flex items-center gap-2">
-                            <el-avatar :src="selfData?.creator.avatarUrl" fit="fill" />
-                            <span class="text-xs text-white/80">
-                                {{ selfData?.creator.nickname }}
+                            <el-avatar :src="selfData?.creator.avatarUrl" fit="fill" size="" />
+
+                            <span class="flex-1 inline-block text-xs text-white/80">
+                                <i class="inline-block w-12 truncate ms:w-full">
+                                    {{ selfData?.creator.nickname }}
+                                </i>
                                 <ArrowRight class="inline-block w-4 align-top" />
                             </span>
                         </div>

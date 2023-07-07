@@ -1,0 +1,206 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "searchWord": "李玟",
+      "score": 50889,
+      "content": "",
+      "source": 0,
+      "iconType": 1,
+      "iconUrl": "https://p1.music.126.net/2zQ0d1ThZCX5Jtkvks9aOQ==/109951163968000522.png",
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "向云端",
+      "score": 27481,
+      "content": "",
+      "source": 0,
+      "iconType": 1,
+      "iconUrl": "https://p1.music.126.net/2zQ0d1ThZCX5Jtkvks9aOQ==/109951163968000522.png",
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "Taylor Swift",
+      "score": 27474,
+      "content": "Taylor Swif爱的告白（重制版）即将上线",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "featured"
+    },
+    {
+      "searchWord": "凄美地",
+      "score": 27400,
+      "content": "Tia翻唱郭顶，超有律动~",
+      "source": 0,
+      "iconType": 1,
+      "iconUrl": "https://p1.music.126.net/2zQ0d1ThZCX5Jtkvks9aOQ==/109951163968000522.png",
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "笼",
+      "score": 22870,
+      "content": "",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "林俊杰",
+      "score": 16740,
+      "content": "看看行走的CD机又发什么新歌啦~",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "that girl",
+      "score": 15220,
+      "content": "大火的欧美经典热单！",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "爱情转移",
+      "score": 13469,
+      "content": "陈奕迅献唱《爱情呼叫转移》主题曲",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "六月的雨 说唱版",
+      "score": 13463,
+      "content": "总会有一天你会相信我 我爱你",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "featured"
+    },
+    {
+      "searchWord": "执迷不悟",
+      "score": 13183,
+      "content": "我爱你又何止 是执迷不悟",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "凤凰传奇",
+      "score": 13147,
+      "content": "曾毅的和声起来真是掉一地鸡皮疙瘩。",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "可不可以",
+      "score": 12679,
+      "content": "可不可以和你在一起",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "薛之谦",
+      "score": 12628,
+      "content": "老薛一发歌就能掀起狂潮！",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "法老",
+      "score": 10803,
+      "content": "硬核chop说唱歌手法老！",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "想你的365天",
+      "score": 10107,
+      "content": "",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "天若有情",
+      "score": 9730,
+      "content": "当年的电影《天若有情》，现在听着歌都会泪目啊~",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "消失的她",
+      "score": 9453,
+      "content": "",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "海阔天空",
+      "score": 8678,
+      "content": "一起怀念Beyond经典歌曲！",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "悬溺",
+      "score": 7880,
+      "content": "这个名字读快了就是 喜欢你",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    },
+    {
+      "searchWord": "予你",
+      "score": 7490,
+      "content": "你是我的解药，我会陪你过冬天",
+      "source": 0,
+      "iconType": 0,
+      "iconUrl": null,
+      "url": "",
+      "alg": "alg_search_rec_hotquery_base_hotquery"
+    }
+  ],
+  "message": "success"
+}
