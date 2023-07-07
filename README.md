@@ -7,16 +7,8 @@
 <img src="public/netease-cloud-music.svg" style="display:inline-block; height: 1em;vertical-align:middle;" />
 </a>，半屏的子页面层叠使用很舒适。
 
-## 效果图
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-<img src="docs/images/01.png" alt="音乐播放界面图" />
-<img src="docs/images/01-1.png" alt="音乐播放界面歌词图" />
-<img src="docs/images/02.png" alt="歌单图" />
-<img src="docs/images/03.png" alt="歌单分类图" />
-<img src="docs/images/04.png" alt="账号界面图" />
-<img src="docs/images/05.png" alt="载入过渡图" />
-<img src="docs/images/06.png" alt="主页与评论图" style="grid-column: span 2;" />
-</div>
+
+
 
 ## 关于 api
 
