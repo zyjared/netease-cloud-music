@@ -6,6 +6,8 @@ import { mockLogin } from "./mocks/login";
 import { mockUser } from "./mocks/user";
 import { mockSearch } from "./mocks/search";
 import { mockNewsongs } from "./mocks/newsongs";
+import { mockFriends } from "./mocks/friends";
+import { mockMv } from "./mocks/mv";
 
 export function mockAll() {
   mockLogin();
@@ -16,4 +18,6 @@ export function mockAll() {
   mockSong();
   mockSearch();
   mockNewsongs();
+  mockFriends();
+  mockMv();
 }

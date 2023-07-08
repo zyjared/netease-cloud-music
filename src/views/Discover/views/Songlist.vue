@@ -2,7 +2,7 @@
 import { getCatPlaylist, getCatlist, getCatlistHot } from '@/api/discover';
 import ListContainer from '@/components/common/ListContainer.vue';
 import SongList from '@/components/common/SongList.vue';
-import { VNode, computed, onMounted, ref, shallowRef, watch } from 'vue';
+import { VNode, computed, onMounted, onUnmounted, ref, shallowRef, watch } from 'vue';
 import { Menu, Close } from '@element-plus/icons-vue';
 import gsap from 'gsap';
 
@@ -68,9 +68,27 @@ const showPlaylist = shallowRef<{
     playCount: number;
     trackCount: number;
 }[]>([]);
+
 watch(title, async (cat) => {
-    showPlaylist.value = await getCatPlaylist(cat = cat)
+    showPlaylist.value = await getCatPlaylist(cat)
 }, { immediate: true })
+
+
+// 下拉加载，临时测试
+const addShowPlaylist = async (e: Event) => {
+    const container = e.target as HTMLElement;
+    if (container.scrollHeight - container.scrollTop - container.offsetHeight < 60) {
+        const res = await getCatPlaylist(title.value, 30, showPlaylist.value.length)
+        showPlaylist.value = showPlaylist.value.concat(res);
+    }
+}
+onMounted(() => {
+    document.querySelector('#fullcontainer')?.addEventListener('scroll', addShowPlaylist);
+})
+onUnmounted(() => {
+    document.querySelector('#fullcontainer')?.removeEventListener('scroll', addShowPlaylist);
+})
+
 
 // 动画
 const onEnter = (ele: VNode) => {
@@ -141,8 +159,8 @@ const onLeave = (ele: VNode, done: () => void) => {
             </Transition>
 
             <!-- 显示的歌单 -->
-            <div class="grid h-[--h-main] grid-cols-3 gap-4 overflow-auto xs:grid-cols-4 sm:grid-cols-5 gap-y-6">
-                <SongList v-for="playlist in showPlaylist" :key="playlist.id" :data="{
+            <div class="grid content-start grid-cols-3 gap-4 xs:grid-cols-5 lg:grid-cols-8">
+                <SongList v-for="playlist, index in showPlaylist" :key="playlist.id + index.toString()" :data="{
                     id: playlist.id,
                     name: playlist.name,
                     picUrl: playlist.coverImgUrl,

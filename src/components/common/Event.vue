@@ -109,7 +109,7 @@ const toComment = computed(() => {
                     </span>
                     <span class="ml-3">{{ typeTexts[data.type.toString() as keyof typeof typeTexts] }}</span>
                 </div>
-                <div class="text-sm opacity-80">
+                <div class="text-sm text-[--secondary]">
                     {{ dayjs(data.eventTime).format("YYYY年M月D日") }}
                 </div>
             </div>
@@ -163,9 +163,9 @@ const toComment = computed(() => {
                 <span>
                     <Share class="inline-block w-[1.2rem] align-bottom mr-1" />转发
                 </span>
-                <span>
+                <SubLink class="inline-block" :to="toComment">
                     <ChatLineRound class="inline-block w-[1.2rem] align-bottom mr-1" />评论
-                </span>
+                </SubLink>
                 <span>
                     <Promotion class="inline-block w-[1.2rem] align-bottom mr-1" />{{
                         data.commentThread.likedCount

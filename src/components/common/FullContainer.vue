@@ -51,7 +51,7 @@ onMounted(async () => {
                 </span>
             </div>
         </div>
-        <div class="relative flex-1 p-4 overflow-y-auto">
+        <div class="relative flex-1 p-4 overflow-y-auto" id="fullcontainer">
             <slot></slot>
         </div>
     </div>

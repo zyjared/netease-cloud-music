@@ -1,6 +1,6 @@
 import { ElNotification } from "element-plus";
 import { defineStore } from "pinia";
-import { ref, shallowReactive, shallowRef, watch } from "vue";
+import { ref, shallowReactive, watch } from "vue";
 
 type LoadingRequests = {
   [key: symbol]: boolean;
@@ -19,7 +19,7 @@ export const useLoadingStore = defineStore("loadingStore", () => {
     timer = setTimeout(() => {
       isLoading.value = false;
       clearTimeout(overTimer);
-    }, 500);
+    }, 400);
   });
 
   function init() {
@@ -27,6 +27,15 @@ export const useLoadingStore = defineStore("loadingStore", () => {
     clearTimeout(overTimer);
     isLoading.value = true;
     requests.clear();
+  }
+
+  function close() {
+    clearTimeout(timer);
+    clearTimeout(overTimer);
+    requests.clear();
+    overTimer = setTimeout(() => {
+      isLoading.value = false;
+    }, 500);
   }
 
   function updateLoading(config: any, value: boolean) {
@@ -52,7 +61,8 @@ export const useLoadingStore = defineStore("loadingStore", () => {
 
   return {
     isLoading,
-    updateLoading,
     init,
+    close,
+    updateLoading,
   };
 });

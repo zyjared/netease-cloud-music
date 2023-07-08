@@ -48,7 +48,13 @@ export async function getCatlistHot() {
 }
 
 // 显示分类的歌单
-export async function getCatPlaylist(cat: string, limit: number = 20) {
-  const res = await httpInstance(`/top/playlist?cat=${cat}&limit=${limit}`);
+export async function getCatPlaylist(
+  cat: string,
+  limit: number = 20,
+  offset: number = 0
+) {
+  const res = await httpInstance(
+    `/top/playlist?cat=${cat}&limit=${limit}&offset=${offset}`
+  );
   return res.playlists;
 }

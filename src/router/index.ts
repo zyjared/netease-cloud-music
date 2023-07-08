@@ -45,6 +45,13 @@ const routes = [
   {
     path: "/mv",
     component: () => import("@/views/Mv/index.vue"),
+    redirect: "/mv/handpick",
+    children: [
+      {
+        path: "handpick",
+        component: () => import("@/views/Mv/views/Handpick.vue"),
+      },
+    ],
   },
   {
     path: "/mine",

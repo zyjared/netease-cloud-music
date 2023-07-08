@@ -19,7 +19,7 @@ type SelfData = {
 <script setup lang="ts">
 import { computed, defineAsyncComponent, onMounted, ref } from "vue";
 import { shallowRef } from "vue";
-import { getUserDetail } from "@/api/user";
+import { getUserDetail, getUserPlaylist } from "@/api/user";
 
 const props = defineProps<SelfProps>();
 const selfData = shallowRef<SelfData>({
@@ -31,9 +31,11 @@ const selfData = shallowRef<SelfData>({
 
 const homePageProps = shallowRef<HomePageProps | null>(null);
 const dynamicsProps = shallowRef<DynamicsProps | null>(null);
+// const subcount = shallowRef(null);
 
 async function disburse(props: SelfProps) {
     let res = await getUserDetail(props.uid);
+    // let resSubcount = await getUserPlaylist(props.uid);
 
     if (!res) return null;
 
@@ -79,6 +81,7 @@ const toUser = computed<ToUser>(() => {
         }
     }
 })
+
 </script>
 
 <template>

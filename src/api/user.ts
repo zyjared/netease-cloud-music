@@ -1,3 +1,4 @@
+import { useCookie } from "@/stores/cookie";
 import { httpInstance } from "@/utils/http";
 
 
@@ -14,3 +15,14 @@ export async function getUserEvent(uid: number) {
   const res = await httpInstance(`/user/event?uid=${uid}`);
   return res;
 }
+
+// 用户歌单
+export async function getUserPlaylist(id: number) {
+    const res = await httpInstance({
+      url: `/user/playlist?uid=${id}`,
+      params: {
+        cookie: useCookie().cookie,
+      },
+    });
+    return res.playlist;
+  }

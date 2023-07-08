@@ -1,4 +1,5 @@
 import { mock } from "mockjs";
+import userPlaylist from "./data/user-playlist.json";
 
 export function mockUser() {
   // 用户展示页
@@ -67,4 +68,7 @@ export function mockUser() {
       },
     ],
   });
+
+  // 用户歌单
+  mock(/\/user\/playlist\?uid.*/, userPlaylist);
 }

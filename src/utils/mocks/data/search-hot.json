@@ -2,26 +2,6 @@
   "code": 200,
   "data": [
     {
-      "searchWord": "李玟",
-      "score": 50889,
-      "content": "",
-      "source": 0,
-      "iconType": 1,
-      "iconUrl": "https://p1.music.126.net/2zQ0d1ThZCX5Jtkvks9aOQ==/109951163968000522.png",
-      "url": "",
-      "alg": "alg_search_rec_hotquery_base_hotquery"
-    },
-    {
-      "searchWord": "向云端",
-      "score": 27481,
-      "content": "",
-      "source": 0,
-      "iconType": 1,
-      "iconUrl": "https://p1.music.126.net/2zQ0d1ThZCX5Jtkvks9aOQ==/109951163968000522.png",
-      "url": "",
-      "alg": "alg_search_rec_hotquery_base_hotquery"
-    },
-    {
       "searchWord": "Taylor Swift",
       "score": 27474,
       "content": "Taylor Swif爱的告白（重制版）即将上线",

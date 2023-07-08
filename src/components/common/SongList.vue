@@ -28,7 +28,7 @@ const toPlaylist = computed<ToPlaylist>(() => {
 
 <template>
     <SubLink class="relative inline-block" :to="toPlaylist">
-        <el-image class="border border-white/10" style="display: block;" :src="data.picUrl" fit="fill" lazy>
+        <el-image class=" border-white/10" style="display: block;" :src="data.picUrl" fit="fill" lazy>
             <template #placeholder><img src="/netease-cloud-music.svg" class="block p-6 " /></template>
             <template #error><img src="/netease-cloud-music.svg" class="block p-6 " /></template>
         </el-image>

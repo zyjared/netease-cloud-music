@@ -12,8 +12,10 @@ import { useCookie } from "@/stores/cookie";
 import { getLoginStatus } from "@/api/login";
 
 import { h, ref, watch } from "vue";
+import { useUserStore } from "@/stores/user";
 
 const cookieStore = useCookie();
+const userStore = useUserStore();
 const logged = ref<null | Boolean>(null);
 const userId = ref<number | null>(null);
 
@@ -22,6 +24,7 @@ watch(
     async (store) => {
         const res = await getLoginStatus(store.cookie, true);
         if (!res.profile) return;
+        userStore.updateUserId(res.profile.userId);
         userId.value = res.profile.userId;
         logged.value = true;
     },
