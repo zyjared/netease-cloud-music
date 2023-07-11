@@ -2,7 +2,7 @@
 import { getCatPlaylist, getCatlist, getCatlistHot } from '@/api/discover';
 import ListContainer from '@/components/common/ListContainer.vue';
 import SongList from '@/components/common/SongList.vue';
-import { VNode, computed, onMounted, onUnmounted, ref, shallowRef, watch } from 'vue';
+import { computed, onMounted, onUnmounted, ref, shallowRef, watch } from 'vue';
 import { Menu, Close } from '@element-plus/icons-vue';
 import gsap from 'gsap';
 
@@ -91,7 +91,7 @@ onUnmounted(() => {
 
 
 // 动画
-const onEnter = (ele: VNode) => {
+const onEnter = (ele: Element) => {
     gsap.from(ele, {
         y: -100,
         opacity: 0,
@@ -99,7 +99,7 @@ const onEnter = (ele: VNode) => {
     })
 }
 
-const onLeave = (ele: VNode, done: () => void) => {
+const onLeave = (ele: Element, done: () => void) => {
     gsap.to(ele, {
         y: -100,
         opacity: 0,

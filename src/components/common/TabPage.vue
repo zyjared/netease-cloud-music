@@ -32,8 +32,9 @@ onUnmounted(() => {
 })
 
 watch(() => route.path, () => {
-    handleBar();
+        handleBar();
 })
+
 
 </script>
 

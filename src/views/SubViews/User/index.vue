@@ -1,10 +1,16 @@
 <script lang="ts">
-import { SelfProps as HomePageProps } from "./HomePage/index.vue";
-import { SelfProps as DynamicsProps } from "./Dynamics/index.vue";
+
+</script>
+
+<script setup lang="ts">
+import { computed, defineAsyncComponent, onMounted, ref } from "vue";
+import { shallowRef } from "vue";
+import { getUserDetail } from "@/api/user";
+
 import SubLink from "@/components/global/SubLink.vue";
 import { ToUser } from "@/types";
 
-export type SelfProps = {
+type SelfProps = {
     uid: number;
 };
 
@@ -14,12 +20,6 @@ type SelfData = {
     nickname: string;
     stats: string[];
 };
-</script>
-
-<script setup lang="ts">
-import { computed, defineAsyncComponent, onMounted, ref } from "vue";
-import { shallowRef } from "vue";
-import { getUserDetail, getUserPlaylist } from "@/api/user";
 
 const props = defineProps<SelfProps>();
 const selfData = shallowRef<SelfData>({
@@ -29,13 +29,11 @@ const selfData = shallowRef<SelfData>({
     stats: [],
 });
 
-const homePageProps = shallowRef<HomePageProps | null>(null);
-const dynamicsProps = shallowRef<DynamicsProps | null>(null);
-// const subcount = shallowRef(null);
+const homePageProps = shallowRef();
+const dynamicsProps = shallowRef();
 
 async function disburse(props: SelfProps) {
     let res = await getUserDetail(props.uid);
-    // let resSubcount = await getUserPlaylist(props.uid);
 
     if (!res) return null;
 

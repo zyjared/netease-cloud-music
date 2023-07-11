@@ -2,14 +2,11 @@ import { httpInstance } from "@/utils/http";
 
 export async function getCommentEvent(threadId: string) {
   const res = await httpInstance(`/comment/event?threadId=${threadId}`);
-  //   console.log(res);
   return res;
 }
 
 export async function getCommentPlaylist(id: number) {
   const res = await httpInstance(`/comment/playlist?id=${id}`);
-  //   console.log(res);
-  //   console.log(id);
   return res;
 }
 

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { IconNeteaseCloudMusic } from '../icons';
+
 defineProps<{
     title?: string
 }>()
@@ -16,7 +18,11 @@ defineProps<{
         </div>
         <div class="hidden sm:flex sm:flex-1">
             <div class="m-auto">
-                <slot name="second"> <img src="netease-cloud-music.svg" alt="" /></slot>
+                <slot name="second">
+                    <div class="w-40 h-40 text-[--self]">
+                        <IconNeteaseCloudMusic />
+                    </div>
+                </slot>
             </div>
         </div>
     </div>

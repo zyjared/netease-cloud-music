@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { ComponentOptions, shallowRef } from "vue";
+import { Component, shallowRef } from "vue";
 import { SubViews, ToViewName, ToView } from "@/types";
 import { views } from "@/router/sub-views";
 
@@ -10,7 +10,7 @@ export interface SubView<T extends ToViewName> {
   toview: T;
   params: SubViews[T];
   view: {
-    component: ComponentOptions;
+    component: Component;
     n: number;
   };
   id: number;

@@ -55,9 +55,6 @@ watch(logged, (_v, prev) => {
                     class="pr-[1rem]" />
             </div>
         </template>
-        <template #second>
-            <img src="netease-cloud-music.svg" alt="" />
-        </template>
     </FullHalfContainer>
 </template>
 

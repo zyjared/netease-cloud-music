@@ -7,14 +7,8 @@ export type SubViews = {
   };
   comment: {
     id: number | string;
-    commentType: "event" | "playlist" | 'song';
-  };
-  commentEvent: {
-    threadId: string;
-    data: unknown;
-  };
-  commentPlaylist: {
-    id: number;
+    commentType: "event" | "playlist" | "song";
+    data?: any;
   };
 };
 
@@ -27,7 +21,4 @@ export type ToView<T extends ToViewName> = {
 
 export type ToUser = ToView<"user">;
 export type ToPlaylist = ToView<"playlist">;
-
 export type ToComment = ToView<"comment">;
-export type ToCommentEvent = ToView<"commentEvent">;
-export type ToCommentPlaylist = ToView<"commentPlaylist">;

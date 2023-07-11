@@ -48,8 +48,7 @@ const onLeave = (ele: Element) => {
 </script>
 
 <template>
-    <div class="fixed top-0 left-0 z-[99] w-full h-full text-white transition-transform duration-300"
-        :class="show ? '' : 'translate-y-full'">
+    <div class="fixed top-0 left-0 z-[99] w-full h-full text-white transition-transform duration-300" :class="show ? '' : 'translate-y-full'">
 
         <div class="absolute top-0 left-0 w-full h-full" :style="{
             background: `url(/static/images/bg.jpg)`
@@ -69,24 +68,25 @@ const onLeave = (ele: Element) => {
 
         <!-- 主视图 -->
 
-        <div class="absolute top-0 left-0 z-40 pb-8 w-full h-full px-6 backdrop-blur-3xl bg-slate-700/10 grid sm:grid-cols-2 grid-rows-[1fr_auto] grid-flow-col"
+        <div class="absolute top-0 left-0 z-40 flex justify-around w-full h-full px-6 backdrop-blur-3xl bg-slate-700/10"
             ref="containerRef">
-
             <!-- 左侧屏幕 -->
 
-            <div class="asbolute sm:opacity-100 flex duration-300 transition-[opacity] pb-32 sm:pb-0"
-                :class="view == 1 ? 'opacity-100 z-10 ' : 'opacity-0 z-0 w-full h-full'" @click="handleView">
-                <Cover class="m-auto" />
+            <div class="absolute flex flex-col justify-around flex-1 w-full h-full pt-8 text-white sm:static transition-[opacity] duration-300 sm:opacity-100 py-12"
+                :class="view == 0 ? 'opacity-0 z-0' : 'opacity-100 z-10'">
+                <div class="flex flex-1 w-full h-full" @click="handleView">
+                    <Cover class="m-auto" />
+                </div>
+                <Control />
             </div>
 
-            <Control class="absolute z-20 w-full bottom-8 sm:static" />
-
             <!-- 右侧歌词 -->
-            <Lyric class="absolute sm:static transition-[opacity] w-full sm:row-span-2 duration-300 sm:opacity-100 pb-36 sm:pb-0"
-                :class="view == 1 ? 'opacity-0 z-0 w-full h-full' : 'opacity-100 z-10'" @click="handleView" />
-
+            <Lyric class="absolute flex-1 w-full h-full sm:static transition-[opacity] duration-300 sm:opacity-100"
+                :class="view == 1 ? 'opacity-0 z-0' : 'opacity-100 z-10'" @click="handleView" />
         </div>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

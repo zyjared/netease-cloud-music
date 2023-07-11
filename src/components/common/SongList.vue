@@ -1,5 +1,3 @@
-
-
 <script setup lang='ts'>
 import { ToPlaylist } from '@/types';
 import { Headset } from '@element-plus/icons-vue'
@@ -24,13 +22,14 @@ const toPlaylist = computed<ToPlaylist>(() => {
         }
     }
 })
+
 </script>
 
 <template>
     <SubLink class="relative inline-block" :to="toPlaylist">
         <el-image class=" border-white/10" style="display: block;" :src="data.picUrl" fit="fill" lazy>
-            <template #placeholder><img src="/netease-cloud-music.svg" class="block p-6 " /></template>
-            <template #error><img src="/netease-cloud-music.svg" class="block p-6 " /></template>
+            <template #placeholder><img src="/netease.png" class="block p-6" /></template>
+            <template #error><img src="/netease.png" class="block p-6 " /></template>
         </el-image>
         <span
             class="absolute top-0 right-0 p-1 text-xs text-white origin-top-right scale-90 bg-gradient-to-l from-black/50">

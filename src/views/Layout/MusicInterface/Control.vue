@@ -14,7 +14,6 @@ import {
 } from "@/components/icons/index.ts";
 import { Close, FolderAdd, DeleteFilled, RefreshLeft } from '@element-plus/icons-vue';
 import { useIsPlayingStore } from "@/stores/isPlaying";
-// import { ref } from "vue";
 import Progress from "./Progress.vue";
 import { computed } from "vue";
 

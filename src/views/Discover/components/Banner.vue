@@ -52,11 +52,12 @@ onUnmounted(() => {
 <template>
     <section class="relative pb-4" ref="outContainerRef">
         <div class="relative w-full overflow-x-hidden h-fit" ref="containerRef">
-            <img v-if="props.banners[0]" :src="props.banners[0].pic" class="block w-full opacity-0 sm:w-3/5" alt="">
-            <div v-for="img, index in props.banners" :key="index" class="absolute w-full transition-all duration-300 sm:w-3/5 "
-                :style="{
+            <img v-if="props.banners[0]" :src="props.banners[0].pic" class="block w-full opacity-0 sm:w-3/5 md:w-2/5"
+                alt="">
+            <div v-for="img, index in props.banners" :key="index"
+                class="absolute w-full transition-all duration-300 sm:w-3/5 md:w-2/5" :style="{
                     top: 0,
-                    left: 30 * (~~(len / 2) - (index + activeIndex) % len) + 50 + '%',
+                    left: 35 * (~~(len / 2) - (index + activeIndex) % len) + 50 + '%',
                     transform: `translateX(-50%) scale(${(~~(len / 2) - (index + activeIndex) % len) != 0 ? 0.8 : 1})`,
                     zIndex: len - Math.abs(~~(len / 2) - (index + activeIndex) % len),
                 }">

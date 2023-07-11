@@ -6,7 +6,7 @@ import { getUserPlaylist } from '@/api/user';
 import { useUserStore } from '@/stores/user';
 import { Action, ElMessageBox } from 'element-plus';
 import { useRouter } from 'vue-router';
-import { getSubcount } from '@/api/mine';
+// import { getSubcount } from '@/api/mine';
 
 const playlist = shallowRef<{
     id: number;
@@ -38,7 +38,7 @@ onMounted(async () => {
         })
     };
     playlist.value = await getUserPlaylist(userStore.userId);
-    await getSubcount();
+    // await getSubcount(); // 测试获得自己的数据
 })
 </script>
 

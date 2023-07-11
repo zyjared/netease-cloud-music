@@ -1,42 +1,19 @@
 <script setup lang='ts'>
-import { getComment, getCommentPlaylist } from '@/api/comment';
 import SubContainer from '@/components/global/SubContainer.vue';
-import { onMounted, shallowRef } from 'vue';
+import { onMounted } from 'vue';
 
-type Props = {
-    id: number
-}
+// type Props = {
+//     id: number
+// }
 
-type Comment = {
-    user: {
-        avatarUrl: string;
-        nickname: string;
-        userId: number;
+// const props = defineProps<Props>()
 
-    };
-    content: string;
-    likedCount: number;
-    time: number;
-    liked: boolean
-}
-type Data = {
-    userId: number;
-    hotComments: Comment[];
-    comments: Comment[];
-    total: number;
-}
-
-const props = defineProps<Props>()
-// const data = shallowRef<Data>()
-
-async function disburse(props: Props) {
-    console.log(props)
-    // data.value = await getComment('playlist', props.id);
-
-}
+// async function disburse(props: Props) {
+    // console.log(props)
+// }
 
 onMounted(() => {
-    disburse(props);
+    // disburse(props);
 })
 </script>
 

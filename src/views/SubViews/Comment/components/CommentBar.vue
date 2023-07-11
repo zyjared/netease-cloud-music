@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import { ToUser } from '@/types';
 import { computed } from 'vue';
-import * as  dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import { Promotion } from '@element-plus/icons-vue';
 
 type Props = {

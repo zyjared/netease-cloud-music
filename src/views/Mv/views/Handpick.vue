@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 import ListContainer from '@/components/common/ListContainer.vue';
-import { onMounted, ref, shallowRef } from 'vue';
+import { onMounted, shallowRef } from 'vue';
 import { getMvFirst } from '@/api/mv'
 import MvCard from '../components/MvCard.vue';
 

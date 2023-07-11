@@ -22,10 +22,14 @@
 
   :root {
     font-size: 14px;
-}
+  }
 
-body {
+  body {
     @apply cursor-default select-none tracking-wide;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0;
   }
 
   h2 {

@@ -23,16 +23,6 @@ const headerList = children!.reduce((pre, cur) => {
     <FullContainer>
         <template #header>
             <TabPage :list="headerList" />
-            <!-- <ul class="relative flex items-center justify-around h-full xs:justify-evenly md:mx-20">
-                        <li v-for="item in headerList" :key="item.path" class="inline-block">
-                            <router-link :to="item.path"
-                                :style="{ color: route.path.includes(item.path) ? 'var(--self)' : 'inherit' }">
-                                {{ item.title }}
-                            </router-link>
-                        </li>
-                        <span class="h-[3px] rounded-full bg-[--self] block absolute -bottom-2 transition-[left,width] duration-300"
-                            ref="barRef"></span>
-                    </ul> -->
         </template>
         <template #default>
 

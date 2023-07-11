@@ -1,13 +1,12 @@
 <script setup lang='ts'>
 import { getPlaylistDetail } from '@/api/playlist';
-import { computed, onMounted, ref, shallowRef } from 'vue';
+import { computed, onMounted, shallowRef } from 'vue';
 import { ArrowRight, Bottom, FolderAdd, ChatLineRound, Share, VideoPlay } from '@element-plus/icons-vue'
 import { formatCount } from '@/utils/formatCount';
 import { ToComment, ToUser } from '@/types';
 import SongTrack from '@/components/common/SongTrack.vue';
 import { useCookie } from '@/stores/cookie';
 import SubLink from '@/components/global/SubLink.vue';
-import TipsTool from './components/TipsTool.vue';
 
 type SelfProps = {
     id: number
@@ -64,15 +63,6 @@ async function disburse(props: SelfProps) {
 onMounted(() => {
     disburse(props);
 })
-
-// 工具提示
-const tipsToolTop = ref<number>(0)
-const tipsToolShow = ref<boolean>(false)
-const clickTrackMore = (element: HTMLElement) => {
-    tipsToolTop.value = element.offsetTop + element.offsetHeight / 2;
-    tipsToolShow.value = true;
-
-}
 
 // 子页面跳转
 const toUser = computed<ToUser | null>(() => {
@@ -160,13 +150,6 @@ const toComment = computed<ToComment | null>(() => {
             <!-- 歌单歌曲 -->
 
             <div class="relative px-2 py-4">
-
-                <!-- 注意 clickTrackMore 的参数 element 应当和 tipsTool 在同一个标签内 -->
-
-                <TipsTool :track-id="1" :top="tipsToolTop" v-model:show="tipsToolShow" />
-
-                <!--  -->
-
                 <div class="px-2 py-4">
                     <span class="w-[3rem] pr-2  inline-block text-center">
                         <VideoPlay class="inline-block w-6 align-top " />
@@ -174,8 +157,7 @@ const toComment = computed<ToComment | null>(() => {
                     播放全部
                     <span class="text-xs opacity-50">（共&ensp;{{ selfData?.trackCount }}&ensp;首）</span>
                 </div>
-                <SongTrack v-for="track, index in selfData?.tracks" :track="track" :order="index + 1" :key="track.id"
-                    @moreEvent="clickTrackMore" />
+                <SongTrack v-for="track, index in selfData?.tracks" :track="track" :order="index + 1" :key="track.id" />
             </div>
 
         </template>

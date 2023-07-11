@@ -48,13 +48,14 @@ export type Data = {
 </script>
 
 <script setup lang='ts'>
+import { ToView } from "@/types";
 import {
     ChatLineRound,
     Share,
     Promotion,
     MoreFilled,
 } from "@element-plus/icons-vue";
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import { computed, toRaw } from 'vue';
 
 const { data } = defineProps<{ data: Data; full?: boolean }>()
@@ -81,11 +82,12 @@ const toUser = computed(() => {
     }
 })
 
-const toComment = computed(() => {
+const toComment = computed<ToView<'comment'>>(() => {
     return {
-        toview: 'commentEvent',
+        toview: 'comment',
         params: {
-            threadId: data.threadId,
+            id: data.threadId,
+            commentType: 'event',
             data: toRaw(data)
         }
     }

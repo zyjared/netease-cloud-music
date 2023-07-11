@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 import { useIsPlayingStore } from '@/stores/isPlaying';
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import { computed } from 'vue';
 
 defineProps({
@@ -26,7 +26,7 @@ const played = computed({
 </script>
 
 <template>
-    <div class="flex items-center justify-between gap-3" v-if="isPlayingStore.song">
+    <div class="flex items-center justify-between gap-3" v-if="isPlayingStore.song" @click.stop>
         <span class="text-xs" v-if="timeShow"> {{ dayjs(0).second(isPlayingStore.playedtime).format('mm:ss') }}</span>
         <el-slider v-model="played" input-size="small" :show-tooltip="false" :min="0" :max="isPlayingStore.song.dt / 1000"
             style="--el-slider-button-size:.8rem;--el-slider-height:.3rem;--el-color-white:red; " :style="{

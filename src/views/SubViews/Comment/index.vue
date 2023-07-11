@@ -7,8 +7,9 @@ import { ToComment } from '@/types'
 type CommentType = ToComment['params']['commentType']
 
 type Props = {
-    id: number;
-    commentType: CommentType
+    id: number| string;
+    commentType: CommentType;
+    data?: any; // 展示的组件如果需要 传递 prop
 }
 
 type Comment = {
@@ -33,7 +34,6 @@ type Data = {
 }
 
 
-
 const props = defineProps<Props>()
 const data = shallowRef<Data>()
 
@@ -43,7 +43,9 @@ const getCommentBarProps = (comment: Comment) => {
 }
 
 async function disburse(props: Props) {
-    data.value = await getComment(props.id, props.commentType)
+    // console.log(props.id);
+    data.value = await getComment(props.id, props.commentType);
+    // console.log('评论', data.value);
 }
 
 onMounted(() => {

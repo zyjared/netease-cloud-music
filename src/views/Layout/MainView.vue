@@ -1,8 +1,6 @@
-<script setup lang="ts">
-</script>
 
 <template>
-    <main class="relative h-[--h-main] overflow-x-hidden">
+    <main class="relative h-[--h-main] overflow-x-hidden sm:ml-[--w-nav]">
         <div class="h-full overflow-y-auto">
             <RouterView />
         </div>

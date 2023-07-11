@@ -12,7 +12,7 @@ import {
 import { Close, DeleteFilled, FolderAdd, RefreshLeft } from '@element-plus/icons-vue'
 import Progress from "./MusicInterface/Progress.vue";
 import { useIsPlayingStore } from "@/stores/isPlaying";
-import * as dayjs from "dayjs";
+import dayjs from "dayjs";
 
 const emits = defineEmits(["imgEvent"]);
 const handleImgEvent = () => {
@@ -23,24 +23,24 @@ const isPlayingStore = useIsPlayingStore();
 </script>
 
 <template>
-    <div
-        class="border-t border-[--line] flex items-center content-start justify-around gap-4 sm:gap-8 py-1 px-1 sm:px-0 h-[--h-component]">
+    <div class="border-t border-[--line] cursor-pointer  flex items-center sm:bottom-0 z-[51] fixed left-0 bottom-[--h-nav] bg-[--bg] w-full content-start justify-around gap-4 sm:gap-8 py-1 px-1 sm:px-0 h-[--h-component]"
+        @click.stop="handleImgEvent">
         <!-- 封面 -->
 
         <div class="w-12 h-12 m-1 cursor-pointer sm:h-16 sm:w-16 sm:ml-6" :style="{
             background: isPlayingStore.song ? `url(${isPlayingStore.song.al.picUrl})` : 'url(static/images/bg.jpg)',
             backgroundSize: 'cover'
-        }" @click.stop="handleImgEvent">
+        }">
         </div>
 
         <!-- 上一曲 播放 下一曲 -->
 
         <div class="flex text-red-500 xs:gap-6 sm:gap-4">
-            <IconBackward class="hidden w-6 cursor-pointer xs:inline-block" @click="isPlayingStore.previousSong()" />
+            <IconBackward class="hidden w-6 cursor-pointer xs:inline-block" @click.stop="isPlayingStore.previousSong()" />
             <IconPlay class="w-6 cursor-pointer" v-show="!isPlayingStore.isPlaying"
-                @click="isPlayingStore.handleIsPlaying()" />
+                @click.stop="isPlayingStore.handleIsPlaying()" />
             <IconPause class="w-6 cursor-pointer" v-show="isPlayingStore.isPlaying"
-                @click="isPlayingStore.handleIsPlaying()" />
+                @click.stop="isPlayingStore.handleIsPlaying()" />
             <IconForward class="hidden w-6 cursor-pointer xs:inline-block" @click="isPlayingStore.nextSong()" />
         </div>
 

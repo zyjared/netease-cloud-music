@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createMemoryHistory, createRouter } from "vue-router";
 import { useSubView } from "@/stores/subView";
 import { useLoadingStore } from "@/stores/loading";
 
@@ -21,7 +21,7 @@ const routes = [
       },
       {
         path: "songlist",
-        component: () => import("@/views/Discover/views/songlist.vue"),
+        component: () => import("@/views/Discover/views/Songlist.vue"),
         meta: {
           title: "歌单",
         },
@@ -67,7 +67,7 @@ const routes = [
   },
   {
     path: "/icons",
-    component: () => import("@/components/Icons/index.vue"),
+    component: () => import("@/components/icons/index.vue"),
   },
   {
     path: "/test",
@@ -76,7 +76,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createMemoryHistory(),
   routes,
 });
 

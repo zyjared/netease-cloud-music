@@ -16,7 +16,8 @@
 
     /* 高度 */
     --h-component: 4rem; /* 音乐组件 */
-    --h-nav: 5rem;
+    --h-nav: 5.5rem;
+    --w-nav: 100%;
     --h-main: calc(100vh - var(--h-component) - var(--h-nav));
   }
 
@@ -24,6 +25,7 @@
     body {
       --h-component: 5rem; /* 音乐组件 */
       --h-main: calc(100vh - var(--h-component));
+      --w-nav: 7rem;
     }
   }
 

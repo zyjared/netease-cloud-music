@@ -70,7 +70,7 @@ onMounted(async () => {
 
         <ListContainer title="推荐歌单" to="/discover/songlist">
             <div class="grid grid-cols-3 row-span-6 xs:grid-cols-4 gap-y-6 gap-x-4 sm:grid-cols-5">
-                <SongList class="w-full" v-for="item in personlized" :data="item" :key="item.id" />
+                <SongList v-for="item in personlized" :data="item" :key="item.id" />
             </div>
         </ListContainer>
 

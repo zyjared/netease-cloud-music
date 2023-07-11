@@ -1,7 +1,7 @@
 <script setup lang='ts'>
+import SongMore from '@/components/common/SongMore.vue';
 import { useIsPlayingStore } from '@/stores/isPlaying';
-import { CaretRight, MoreFilled, } from '@element-plus/icons-vue'
-import { ref } from 'vue';
+import { CaretRight } from '@element-plus/icons-vue'
 
 // 该文件同 components/SongTrack
 // 但是接口参数不一样，不再修改数据结构
@@ -22,21 +22,13 @@ defineProps<{
     mvid: number;
 }>()
 
-// 更多操作
-const emits = defineEmits(['moreEvent'])
-const trackRef = ref<HTMLElement | null>(null);
-const clickMore = () => {
-    emits('moreEvent', trackRef.value)
-}
-
 // 点击即添加歌曲到正在播放
 const isPlayingStore = useIsPlayingStore();
 
 </script>
 
 <template>
-    <div class="flex items-center gap-2 p-2 pl-1 text-[--secondary] border-gray-600/10 border"
-        ref="trackRef">
+    <div class="flex items-center gap-2 p-2 pl-1 text-[--secondary] border-gray-600/10 border" ref="trackRef">
 
         <!-- 序号 -->
 
@@ -73,10 +65,7 @@ const isPlayingStore = useIsPlayingStore();
             </div>
 
 
-            <div class="relative">
-                <MoreFilled class="inline-block w-4 rotate-90 cursor-pointer" style="outline: none;"
-                    @click.stop="clickMore" />
-            </div>
+            <SongMore :track-id="id" />
 
         </div>
 
