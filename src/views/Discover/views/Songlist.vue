@@ -132,10 +132,10 @@ const onLeave = (ele: Element, done: () => void) => {
             <Transition @enter="onEnter" @leave="onLeave">
                 <div class="absolute z-[40] top-0 left-0 flex w-full h-full cursor-pointer backdrop-blur-sm"
                     v-if="catlistShow">
-                    <div class="w-4/5 p-4 m-auto h-fit space-y-8 border bg-[--bg] rounded-lg">
+                    <div class="w-4/5 p-4 m-auto h-fit space-y-8 border border-[--line] bg-[--bg] rounded-lg">
                         <div class="flex items-center gap-4">
-                            <span class="flex-1 py-1 text-center border" :class="title == '全部' ? 'border-[--self]' : ''"
-                                @click="title = '全部'">
+                            <span class="flex-1 py-1 text-center border border-[--line]"
+                                :class="title == '全部' ? 'border-[--self]' : ''" @click="title = '全部'">
                                 全部歌单
                             </span>
                             <span class="float-r hover:bg-[--line] p-1 rounded-md cursor-poniter"
@@ -149,7 +149,8 @@ const onLeave = (ele: Element, done: () => void) => {
                                 <div class="overflow-y-auto text-sm" :style="{ height: 3 * list.length + 'rem' }">
                                     <span v-for="cat, index in cats" :key="index" @click="title = cat.name"
                                         :class="title == cat.name ? 'border-[--self]' : ''"
-                                        class="inline-block w-24 p-1 m-2 text-center border sm:w-28">{{ cat.name }}</span>
+                                        class="inline-block w-24 p-1 m-2 text-center border border-[--line] sm:w-28">{{
+                                            cat.name }}</span>
                                 </div>
                             </el-tab-pane>
                         </el-tabs>

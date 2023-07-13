@@ -26,6 +26,8 @@ const handleActiveIndex = () => {
 
     if (lyrics.value.length == 0) return;
 
+    console.log('歌词', activeIndex.value)
+
     let len = lyrics.value.length - 1;
     let index = activeIndex.value;
 
@@ -46,7 +48,6 @@ watch(activeIndex, (index) => {
     lyricRef.value?.children[index].scrollIntoView({ behavior: "smooth", block: "center" })
 })
 onMounted(() => {
-    if (lyrics.value.length == 0) return;
     isPlayingStore.audio.addEventListener('timeupdate', handleActiveIndex);
 })
 onUnmounted(() => {
@@ -87,8 +88,8 @@ const handlePlayedTime = (index: number) => {
             <div class="  h-[calc(100%-4rem)]  mt-6 overflow-y-auto [&::-webkit-scrollbar]:w-0 " ref="lyricRef"
                 v-show="lyrics.length > 0">
                 <p v-for="lyric, index in lyrics" :key="isPlayingStore.song.id + '-' + index"
-                    class="mx-auto transition-all duration-300 cursor-pointer w-fit leading-[2.5rem] height-[2.5rem]"
-                    :class="activeIndex !== index ? '' : 'text-white text-[1.2rem] font-bold'"
+                    class="mx-auto transition-transform duration-300 cursor-pointer w-fit leading-[2.5rem] height-[2.5rem]"
+                    :class="activeIndex !== index ? '' : 'text-white font-bold scale-105'"
                     @click.stop="() => handlePlayedTime(index)">{{
                         lyric.content
                     }}</p>

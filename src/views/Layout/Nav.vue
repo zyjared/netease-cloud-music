@@ -39,7 +39,7 @@ const pages = [
 
 <template>
     <nav
-        class="fixed sm:pb-[--h-component] sm:h-full left-0 bottom-0 bg-[--bg] z-50 flex sm:flex-col pb-6 w-full sm:w-[--w-nav] items-center justify-around py-2 border-t sm:border-r sm:border-t-0 border-[--line] h-[--h-nav]">
+        class="sm:h-full bg-[--bg] z-50 flex sm:flex-col pb-6 w-full sm:w-[--w-nav] items-center justify-around py-2 border-t sm:border-r sm:border-t-0 border-[--line] h-[--h-nav]">
         <router-link v-for="page in pages" :key="page.title" :to="page.path" class="text-center">
             <component class="w-[2.6rem] block p-2 rounded-full" :is="page.icon" />
             <div class="text-sm">{{ page.title }}</div>

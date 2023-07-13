@@ -5,6 +5,7 @@ import MusicInterface from "./views/Layout/MusicInterface/index.vue";
 import { onBeforeMount, ref } from "vue";
 import { modeInit } from "./composables/useDark";
 import MainView from "./views/Layout/MainView.vue";
+import { useClientSize } from '@/composables/useClientSize'
 
 const musicInterfaceShow = ref<boolean>(false);
 const handleMusicInterfaceShow = () => {
@@ -14,6 +15,9 @@ const handleMusicInterfaceShow = () => {
 onBeforeMount(() => {
     modeInit();
 });
+
+// size
+useClientSize();
 
 </script>
 
@@ -26,10 +30,10 @@ onBeforeMount(() => {
 
 <style>
 /* 此处只布局 */
-/* #app {
+#app {
     position: relative;
-    max-height: 100vh;
-    height: 100vh;
+    /* max-height: 100vh;
+    height: 100vh; */
     height: -webkit-fill-available;
     display: grid;
     grid-template:
@@ -57,5 +61,5 @@ onBeforeMount(() => {
             "nav main" 1fr
             "music music" auto / auto 1fr;
     }
-} */
+}
 </style>

@@ -69,7 +69,7 @@ const isPlayingStore = useIsPlayingStore();
                 <CaretRight class="w-4" />
             </div>
 
-            <SongMore :track-id="track.id" />
+            <SongMore :track-id="track.id"  />
 
         </div>
 

@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 import { useRoute } from 'vue-router';
-import { ref, onMounted, onUnmounted, watch } from 'vue';
+import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue';
 
 defineProps<{
     list: { title: string; path: string }[]
@@ -31,10 +31,10 @@ onUnmounted(() => {
     window.removeEventListener('resize', handleBar);
 })
 
-watch(() => route.path, () => {
-        handleBar();
+watch(() => route.path, async () => {
+    await nextTick();
+    handleBar();
 })
-
 
 </script>
 

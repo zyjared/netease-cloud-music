@@ -23,7 +23,7 @@ const isPlayingStore = useIsPlayingStore();
 </script>
 
 <template>
-    <div class="border-t border-[--line] cursor-pointer  flex items-center sm:bottom-0 z-[51] fixed left-0 bottom-[--h-nav] bg-[--bg] w-full content-start justify-around gap-4 sm:gap-8 py-1 px-1 sm:px-0 h-[--h-component]"
+    <div class="border-t border-[--line] cursor-pointer  flex items-center z-[51] bg-[--bg] w-full content-start justify-around gap-4 sm:gap-8 py-1 px-1 sm:px-0 h-[--h-component]"
         @click.stop="handleImgEvent">
         <!-- 封面 -->
 
@@ -41,7 +41,7 @@ const isPlayingStore = useIsPlayingStore();
                 @click.stop="isPlayingStore.handleIsPlaying()" />
             <IconPause class="w-6 cursor-pointer" v-show="isPlayingStore.isPlaying"
                 @click.stop="isPlayingStore.handleIsPlaying()" />
-            <IconForward class="hidden w-6 cursor-pointer xs:inline-block" @click="isPlayingStore.nextSong()" />
+            <IconForward class="hidden w-6 cursor-pointer xs:inline-block" @click.stop="isPlayingStore.nextSong()" />
         </div>
 
         <!-- 进度条 -->
@@ -74,7 +74,7 @@ const isPlayingStore = useIsPlayingStore();
                     <p>请到官方 App 下载 \~.~/</p>
                 </template>
                 <template #default>
-                    <IconArrowDown class="hidden w-6 cursor-pointer sm:inline-block" />
+                    <IconArrowDown class="hidden w-6 cursor-pointer sm:inline-block" @click.stop />
                 </template>
             </el-tooltip>
             <IconArrowsRightLeft class="hidden w-6 sm:inline-block" />
@@ -125,7 +125,7 @@ const isPlayingStore = useIsPlayingStore();
                     </div>
                 </template>
                 <template #default>
-                    <IconBars class="hidden w-6 cursor-pointer xs:inline-block" />
+                    <IconBars class="hidden w-6 cursor-pointer xs:inline-block" @click.stop />
                 </template>
             </el-tooltip>
 

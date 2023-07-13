@@ -82,7 +82,7 @@ const onLeave = (ele: Element) => {
             <Control class="absolute z-20 w-full bottom-8 sm:static" />
 
             <!-- 右侧歌词 -->
-            <Lyric class="absolute sm:static transition-[opacity] w-full sm:row-span-2 duration-300 sm:opacity-100 pb-36 sm:pb-0"
+            <Lyric class="absolute sm:static transition-[opacity] w-full sm:row-span-2 duration-300 sm:opacity-100 pb-40 sm:pb-0"
                 :class="view == 1 ? 'opacity-0 z-0 w-full h-full' : 'opacity-100 z-10'" @click="handleView" />
 
         </div>
