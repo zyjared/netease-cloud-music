@@ -7,7 +7,9 @@
 <img src="public/netease-cloud-music.svg" style="display:inline-block; height: 1em;vertical-align:middle;" />
 </a>。
 
-静态演示地址：[https://zyzstudy.gitee.io/](https://zyzstudy.gitee.io/)
+## 静态演示地址
+
+[https://zyzstudy.gitee.io/](https://zyzstudy.gitee.io/)
 
 > 静态下的数据为 mock
 
@@ -36,7 +38,7 @@
 
 默认使用 [mock](http://mockjs.com/) 的数据。
 
-## 演示
+## 使用
 
 ```shell
 $ git clone https://github.com/yujiangz/netease-cloud-music.git
