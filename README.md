@@ -34,9 +34,12 @@
 
 ## 关于 api
 
-api 失效，可以在 [NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi) 查看详情。
+可以在 [NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi) 查看详情。
 
 默认使用 [mock](http://mockjs.com/) 的数据。
+
+> [!IMPORTANT]
+> API 失效，见[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi) 。
 
 ## 使用
 
@@ -46,5 +49,3 @@ $ cd netease-cloud-music
 $ npm install
 $ npm run dev
 ```
-
-如果不使用 mock，则需要阅读 [关于 api](#关于-api)。除此之外，还需要在 `src/utils/mock.ts` 注释掉不需要 mock 的部分。
