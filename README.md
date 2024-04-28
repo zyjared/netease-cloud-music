@@ -38,7 +38,7 @@
 
 默认使用 [mock](http://mockjs.com/) 的数据。
 
-> [!IMPORTANT]
+> [!WARNING]
 > API 失效，见[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi) 。
 
 ## 使用
