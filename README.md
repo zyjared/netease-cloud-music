@@ -34,7 +34,7 @@
 
 ## 关于 api
 
-可以在 [NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi) 查看详情。
+api 失效，可以在 [NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi) 查看详情。
 
 默认使用 [mock](http://mockjs.com/) 的数据。
 
