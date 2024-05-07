@@ -44,7 +44,7 @@
 ## 使用
 
 ```shell
-$ git clone https://github.com/yujiangz/netease-cloud-music.git
+$ git clone https://github.com/zyj-dev/netease-cloud-music.git
 $ cd netease-cloud-music
 $ npm install
 $ npm run dev
