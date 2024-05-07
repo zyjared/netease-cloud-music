@@ -9,7 +9,7 @@
 
 ## 静态演示地址
 
-[https://zyzstudy.gitee.io/](https://zyzstudy.gitee.io/)
+[https://zyj-dev.gitee.io/](https://zyj-dev.gitee.io/)
 
 > 静态下的数据为 mock
 
