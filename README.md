@@ -20,8 +20,8 @@ $ npm run dev
 见[使用](#使用)
 
 > [!IMPORTANT]
-> 
-> - 地址已失效
+>
+> - [Gitee](https://gitee.com/zyj-dev) 中的展示已失效
 > - 依赖已变更
 > - 不再修复
 
