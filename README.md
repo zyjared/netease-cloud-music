@@ -27,12 +27,12 @@ $ npm run dev
 
 
 <div style="display: flex; gap: 2%;">
-    <img src="/docs/images/01.jpg" alt="" width="49%" />
-    <img src="/docs/images/02.jpg" alt="" width="49%" />
-    <img src="/docs/images/03.jpg" alt="" width="49%" />
-    <img src="/docs/images/04.jpg" alt="" width="49%" />
-    <img src="/docs/images/05.jpg" alt="" width="49%" />
-    <img src="/docs/images/06.jpg" alt="" width="49%" />
+    <img src="/docs/images/01.jpg" alt="" width="32%" />
+    <img src="/docs/images/02.jpg" alt="" width="32%" />
+    <img src="/docs/images/03.jpg" alt="" width="32%" />
+    <img src="/docs/images/04.jpg" alt="" width="32%" />
+    <img src="/docs/images/05.jpg" alt="" width="32%" />
+    <img src="/docs/images/06.jpg" alt="" width="32%" />
   <div style="display: flex; gap: 2%;">
     <img src="/docs/images/07.jpg" alt="" width="24%" />
     <img src="/docs/images/08.jpg" alt="" width="24%" />
