@@ -44,13 +44,14 @@ async function disburse(props: SelfProps) {
         stats: [
             `${res.profile.follows} 关注`,
             `${res.profile.followeds} 粉丝`,
-            `Lv.${0}`,
+            `Lv.${res.level}`,
         ],
     };
 
     homePageProps.value = {
         createDays: res.createDays,
         createTime: res.createTime,
+        gender: res.profile.gender,
     };
 
     dynamicsProps.value = {
@@ -103,9 +104,10 @@ const toUser = computed<ToUser>(() => {
                         </span>
                     </div>
                     <div class="space-x-2">
-                        <span class="border inline-block border-[--line] px-1 rounded-md cursor-pointer">IP 属地：{{ "江苏"
+                        <span class="border inline-block border-[--line] px-1 rounded-md cursor-pointer">IP:{{ "江苏"
                         }}</span>
                         <span class="border inline-block border-[--line] px-1 rounded-md cursor-pointer">DOUDOU 乐迷</span>
+                        <span class="border inline-block border-[--line] px-1 rounded-md cursor-pointer">台湾 台北</span>
                     </div>
                     <div style="font-size: 0.5rem">
                         <el-button class="w-20 h-8" size="small" round>互相关注 </el-button>

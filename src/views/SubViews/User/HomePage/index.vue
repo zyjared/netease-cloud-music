@@ -2,18 +2,24 @@
 export type SelfProps = {
     createDays: number,
     createTime: number,
+    gender: number,
 };
 
 export const a = 2;
 </script>
 
 <script setup lang="ts">
+import { computed } from 'vue';
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
 
 dayjs.extend(duration);
 
-const { createDays, createTime } = defineProps<SelfProps>();
+const { createDays, createTime, gender } = defineProps<SelfProps>();
+
+const genderText = computed(() => {
+  return gender === 1 ? '男' : gender === 2 ? '女' : '未知';
+});
 </script>
 
 <template>
@@ -28,7 +34,7 @@ const { createDays, createTime } = defineProps<SelfProps>();
             </dd>
             <br />
             <dt class="inline-block">性别：</dt>
-            <dd class="inline-block">男</dd>
+            <dd class="inline-block">{{ genderText }}</dd>
         </dl>
     </section>
 </template>
