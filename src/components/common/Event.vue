@@ -73,6 +73,38 @@ const typeTexts = {
     "41": "分享视频",
 }
 
+const formattedEventTime = computed(() => {
+    const eventDate = dayjs(data.eventTime);
+    const now = dayjs();
+
+    if (eventDate.isSame(now, 'day')) {
+        // 今天
+        return eventDate.format('HH:mm');
+    } else if (eventDate.isSame(now.subtract(1, 'day'), 'day')) {
+        // 昨天
+        return `昨天 ${eventDate.format('HH:mm')}`;
+    } else if (eventDate.isSame(now, 'year')) {
+        // 今年
+        return eventDate.format('MM月DD日');
+    } else {
+        // 其他年份
+        return eventDate.format('YYYY年MM月DD日');
+    }
+});
+
+const gridTemplateColumns = computed(() => {
+    const picCount = data.pics.length;
+    if (picCount <= 3) {
+        return 'repeat(3, 1fr)';
+    } else if (picCount <= 6) {
+        return 'repeat(2, 1fr)';
+    } else if (picCount === 9) {
+        return 'repeat(3, 1fr)';
+    } else {
+        return 'repeat(3, 1fr)';
+    }
+});
+
 const toUser = computed(() => {
     return {
         toview: 'user',
@@ -112,7 +144,7 @@ const toComment = computed<ToView<'comment'>>(() => {
                     <span class="ml-3">{{ typeTexts[data.type.toString() as keyof typeof typeTexts] }}</span>
                 </div>
                 <div class="text-sm text-[--secondary]">
-                    {{ dayjs(data.eventTime).format("YYYY年M月D日") }}
+                    {{ formattedEventTime }}
                 </div>
             </div>
         </div>
@@ -123,11 +155,11 @@ const toComment = computed<ToView<'comment'>>(() => {
             paddingLeft: full ? '0' : '4rem'
         }">
 
+
             <!-- 发布的文字 -->
+
             <SubLink class="block" :to="toComment">
-                <p>
-                <p>{{ data.jsonParse.msg }}</p>
-                </p>
+                <p style="white-space: pre-line;">{{ data.jsonParse.msg }}</p>
             </SubLink>
 
             <!-- =================================== -->
@@ -154,19 +186,21 @@ const toComment = computed<ToView<'comment'>>(() => {
 
             <!-- 图片 -->
 
-            <div class="flex flex-wrap gap-4 py-2">
+            <div class="grid gap-2 py-2" :style="{ gridTemplateColumns: gridTemplateColumns }">
                 <el-image v-for="(pic, index) in data.pics" :src="pic.squareUrl" :key="index" fit="fill"
-                    class="w-full rounded-md md:w-1/3" />
+                    class="w-full rounded-md" />
             </div>
 
             <!-- 底部信息 -->
 
             <div class="space-x-4 text-sm opacity-75">
                 <span>
-                    <Share class="inline-block w-[1.2rem] align-bottom mr-1" />转发
+                    <Share class="inline-block w-[1.2rem] align-bottom mr-1" />分享
                 </span>
                 <SubLink class="inline-block" :to="toComment">
-                    <ChatLineRound class="inline-block w-[1.2rem] align-bottom mr-1" />评论
+                    <ChatLineRound class="inline-block w-[1.2rem] align-bottom mr-1" />{{
+                        data.commentThread.commentCount
+                    }}
                 </SubLink>
                 <span>
                     <Promotion class="inline-block w-[1.2rem] align-bottom mr-1" />{{
